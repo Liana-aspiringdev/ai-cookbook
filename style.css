@@ -1,0 +1,88 @@
+/* Global reset and typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fff8f0; /* warm off-white */
+    color: #333;
+    line-height: 1.6;
+    padding: 2rem;
+    text-align: center; /* ✅ centers h2 and p automatically */
+}
+
+/* Header */
+h1 {
+    font-size: 3rem;
+    color: #b22222; /* Italian red */
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+/* Subheading */
+h2 {
+    margin-top: 2rem;
+    color: #2f4f4f;
+    border-bottom: 2px solid #b22222;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Table of contents */
+ul {
+    list-style: none;
+    max-width: 300px;
+    margin: 1rem auto; /* ✅ centers the list block */
+    padding: 0;
+    text-align: left; /* keeps list text aligned neatly inside */
+}
+
+ul li {
+    background-color: #f5e6d0;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #ffe4c4;
+    transform: scale(1.03);
+}
+
+a {
+    display: block;
+    color: #b22222;
+    text-decoration: none;
+    padding: 0.75rem;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #8b0000;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    ul {
+        width: 100%;
+    }
+}
+
